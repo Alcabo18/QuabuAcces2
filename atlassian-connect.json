@@ -1,0 +1,53 @@
+{
+    "name": "Quabu Access",
+    "description": "App that creates a button that lets you access Quabu's web interesting sections.",
+    "key": "QuabuA",
+    "baseUrl": "https://raw.githubusercontent.com/Jekzer/Quabu-Access/main/atlassian-connect.json",
+    "vendor": {
+        "name": "Quabu Solutions, sl",
+        "url": "https://quabu.eu/"
+    },
+    "authentication": {
+        "type": "none"
+    },
+    "apiVersion": 1,
+	"modules": {
+	"webSections": [
+		{
+			"key": "board-links",
+			"location": "jira.agile.board.tools",
+			"weight": 10,
+			"name": {
+			"value": "Quabu Access"
+			}
+		}
+	],
+		"webItems": [
+			{
+				"location": "board-links",
+				"weight": 200,
+				"styleClasses": [
+					"webitem",
+					"system-present-webitem"
+				],
+				"url": "https://quabu.eu/esports/",
+				"context": "product",
+				"target": {
+					"type": "page"
+				},
+				"tooltip": {
+					"value": "E-sports news"
+				},
+				"icon": {
+					"width": 16,
+					"height": 16,
+					"url": "/quabu_icon.png"
+				},
+				"name": {
+					"value": "E-sports news"
+				},
+				"key": "install"
+			}
+		]
+	}
+}
